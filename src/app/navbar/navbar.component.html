@@ -8,10 +8,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Recipes<span class="sr-only">(current)</span></a>
+          <a (click)="page.emit('recipes')" class="nav-link" href="#">Recipes<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Shopping List</a>
+        <li  class="nav-item">
+          <a (click)="page.emit('Shopping')" class="nav-link" href="#">Shopping List</a>
         </li>
       </ul>
       <ul class="navbar-nav">

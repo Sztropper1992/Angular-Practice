@@ -1,0 +1,6 @@
+<div class="container">
+    <app-shopping-edit (onAdded)="addIng($event)"></app-shopping-edit>
+    <ul *ngFor="let ingredient of ingredients; let i = index">
+        <li>{{ingredient.name}} {{ingredient.amount}}</li>
+    </ul>
+</div>

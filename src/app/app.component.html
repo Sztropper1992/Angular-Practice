@@ -1,3 +1,4 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-navbar></app-navbar>
-<app-recipe></app-recipe>
+<app-navbar (page)="onPage($event)"></app-navbar>
+<app-recipe *ngIf="recipePage"></app-recipe>
+<app-shopping-list *ngIf="!recipePage"></app-shopping-list>

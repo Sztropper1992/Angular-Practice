@@ -1,8 +1,8 @@
-<ul *ngFor="let recipe of recipes">
+<ul *ngFor="let recipe of recipes" (click)="recipeEmitter(recipe)">
         <li>{{recipe.name}}</li>
         <li>{{recipe.desc}}</li>
         <li>
-            <img src="{{recipe.img}}" alt="">
+            <img src="{{recipe.img}}" class="img-fluid" alt="">
         </li>
     </ul>
     

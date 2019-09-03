@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeComponent{
 
+recipe : Recipe;
+
+addRecipe(recipe : Recipe){
+  this.recipe = recipe;
+}
 
   constructor() { }
 

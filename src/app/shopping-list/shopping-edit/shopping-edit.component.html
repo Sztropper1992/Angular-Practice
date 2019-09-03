@@ -1,0 +1,11 @@
+<form>
+        <div class="form-group">
+          <label for="item">Item</label>
+          <input #itemInput type="text" class="form-control" id="item" aria-describedby="emailHelp" placeholder="item name">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="amount">Amount</label>
+          <input #amountInput type="number" class="form-control" id="amount" placeholder="amount">
+         </div> 
+         <button (click)="onAdd()" type="submit" class="btn btn-primary">Add item</button>
+         <button class="btn btn-danger">Delete item</button>
+ </form>
